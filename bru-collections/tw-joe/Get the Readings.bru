@@ -1,0 +1,11 @@
+meta {
+  name: Get the Readings
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/readings/read/smart-meter-{{METER_ID}}
+  body: none
+  auth: none
+}

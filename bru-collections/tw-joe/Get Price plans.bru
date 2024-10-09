@@ -1,0 +1,11 @@
+meta {
+  name: Get Price plans
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/price-plans/compare-all/smart-meter-{{METER_ID}}
+  body: none
+  auth: none
+}

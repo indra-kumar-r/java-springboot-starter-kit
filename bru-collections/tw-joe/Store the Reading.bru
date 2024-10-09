@@ -1,0 +1,23 @@
+meta {
+  name: Store the Reading
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/readings/store
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "smartMeterId": "smart-meter-{{METER_ID}}",
+    "electricityReadings": [
+      {
+        "time": "{{TIME}}",
+        "reading": "{{READING}}"
+      }
+    ]
+  }
+}
