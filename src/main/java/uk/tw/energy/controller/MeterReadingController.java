@@ -49,13 +49,4 @@ public class MeterReadingController {
                 ? ResponseEntity.ok(readings.get())
                 : ResponseEntity.notFound().build();
     }
-
-    /*
-     ******************************************************************************
-     * INSTRUCTIONS:
-     * - DO NOT change any of the code above.
-     * - You MUST implement a new API with the following endpoint:
-     * /read/total-cost/{smartMeterId}
-     ******************************************************************************
-     */
 }
